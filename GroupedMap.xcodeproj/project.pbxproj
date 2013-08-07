@@ -18,6 +18,9 @@
 		1310E76E17B2323F00D23685 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1310E76D17B2323F00D23685 /* Default-568h@2x.png */; };
 		1310E77117B2323F00D23685 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1310E77017B2323F00D23685 /* ViewController.m */; };
 		1310E77417B2323F00D23685 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1310E77217B2323F00D23685 /* ViewController.xib */; };
+		1310E77B17B232A100D23685 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1310E77A17B232A100D23685 /* MapKit.framework */; };
+		1310E77D17B2348A00D23685 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1310E77C17B2348A00D23685 /* CoreLocation.framework */; };
+		1310E78617B23F1300D23685 /* SpotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1310E78517B23F1300D23685 /* SpotAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		1310E76F17B2323F00D23685 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1310E77017B2323F00D23685 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1310E77317B2323F00D23685 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		1310E77A17B232A100D23685 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1310E77C17B2348A00D23685 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1310E78417B23F1300D23685 /* SpotAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotAnnotation.h; sourceTree = "<group>"; };
+		1310E78517B23F1300D23685 /* SpotAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1310E77D17B2348A00D23685 /* CoreLocation.framework in Frameworks */,
+				1310E77B17B232A100D23685 /* MapKit.framework in Frameworks */,
 				1310E75817B2323E00D23685 /* UIKit.framework in Frameworks */,
 				1310E75A17B2323E00D23685 /* Foundation.framework in Frameworks */,
 				1310E75C17B2323E00D23685 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +82,8 @@
 		1310E75617B2323E00D23685 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1310E77C17B2348A00D23685 /* CoreLocation.framework */,
+				1310E77A17B232A100D23685 /* MapKit.framework */,
 				1310E75717B2323E00D23685 /* UIKit.framework */,
 				1310E75917B2323E00D23685 /* Foundation.framework */,
 				1310E75B17B2323E00D23685 /* CoreGraphics.framework */,
@@ -88,6 +99,8 @@
 				1310E76F17B2323F00D23685 /* ViewController.h */,
 				1310E77017B2323F00D23685 /* ViewController.m */,
 				1310E77217B2323F00D23685 /* ViewController.xib */,
+				1310E78417B23F1300D23685 /* SpotAnnotation.h */,
+				1310E78517B23F1300D23685 /* SpotAnnotation.m */,
 				1310E75E17B2323E00D23685 /* Supporting Files */,
 			);
 			path = GroupedMap;
@@ -176,6 +189,7 @@
 				1310E76417B2323F00D23685 /* main.m in Sources */,
 				1310E76817B2323F00D23685 /* AppDelegate.m in Sources */,
 				1310E77117B2323F00D23685 /* ViewController.m in Sources */,
+				1310E78617B23F1300D23685 /* SpotAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +277,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupedMap/GroupedMap-Prefix.pch";
 				INFOPLIST_FILE = "GroupedMap/GroupedMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupedMap/GroupedMap-Prefix.pch";
 				INFOPLIST_FILE = "GroupedMap/GroupedMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
